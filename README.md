@@ -1,4 +1,4 @@
-Dockerized Minspore
+Dockerized Mindspore
 -------------------
 
 # Current version
