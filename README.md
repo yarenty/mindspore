@@ -41,7 +41,7 @@ docker push <your docker name>/mindspore:latest
 
 ## 0.3.0 - added functional and operations test 
 * mindspore 0.3.0
-* still, looks like functional is not working i.e: AddN, TensorAdd
+* still, CPU lots missing operators i.e: AddN, TensorAdd - see [Supported Operator list](https://www.mindspore.cn/docs/zh-CN/0.3.0-alpha/operator_list.html)
 
 ## 0.2.0 - initial start version
 * ubuntu 18.04
