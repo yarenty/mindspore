@@ -18,11 +18,11 @@ RUN apt -y install python3.7 curl python3-distutils \
   && python3.7 get-pip.py
 
 # getting current version of mindspore
-RUN pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/0.2.0-alpha/MindSpore/cpu/x86_ubuntu/mindspore-0.2.0-cp37-cp37m-linux_x86_64.whl
-
+RUN pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/0.3.0-alpha/MindSpore/cpu/ubuntu_x86/mindspore-0.3.0-cp37-cp37m-linux_x86_64.whl
 # local tests
 COPY test_mul.py /opt
 COPY test_add.py /opt
+COPY test_addN.py /opt
 
 WORKDIR /opt
 
