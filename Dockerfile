@@ -3,7 +3,7 @@ MAINTAINER fnndsc "yarenty@gmail.com"
 
 #installing python
 RUN apt-get update \
-  && apt-get install -y python3.7 python3-pip \
+  && apt-get install -y python3.7 python3-pip mc \
   && python3.7 -m pip install pip \
   && cd /usr/local/bin \
   && ln -s /usr/bin/python3.7 python \
@@ -21,6 +21,7 @@ RUN apt -y install python3.7 curl python3-distutils \
 RUN pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/0.3.0-alpha/MindSpore/cpu/ubuntu_x86/mindspore-0.3.0-cp37-cp37m-linux_x86_64.whl
 # local tests
 COPY test_mul.py /opt
+COPY lenet.py /opt
 COPY test_add.py /opt
 COPY test_addN.py /opt
 
