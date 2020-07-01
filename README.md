@@ -29,6 +29,32 @@ Output:
 [ 4. 10. 18.]
 ``` 
 
+
+## LeNet5 test
+
+Added new LeNet5 test:
+```shell script
+python lenet.py
+```
+
+
+Output:
+```shell script
+epoch: 1 step: 1872, loss is 0.0793872
+epoch: 1 step: 1873, loss is 0.07211199
+epoch: 1 step: 1874, loss is 0.079631396
+epoch: 1 step: 1875, loss is 0.31805548
+============== Starting Testing ==============
+============== Accuracy:{'Accuracy': 0.9702524038461539} ==============
+```
+
+Also you can check that after run there will be fen new files/directories:
+ - MNIST_Data directory 
+ - checkpoint_... files with latest train checkpoints
+ - ms_output_... files with train and eval outputs
+
+
+
 # Build
 ```shell script
 docker build --tag mindspore:latest .  
