@@ -5,7 +5,7 @@ Dockerized Mindspore
 
 * ubuntu 18.04
 * python 3.7
-* mindspore 0.3.0
+* mindspore 0.5.0
 
 
 
@@ -62,8 +62,13 @@ docker tag mindspore:latest <your docker name>/midspore:latest
 docker push <your docker name>/mindspore:latest  
 ```
 
+# Input
+`https://github.com/mindspore-ai/mindspore`
 
 # Changelog
+
+## 0.5.0
+* change from alpha to beta - investigation in progress what is new
 
 ## 0.3.0 - added functional and operations test 
 * mindspore 0.3.0
