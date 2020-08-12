@@ -1,3 +1,4 @@
+#!/usr/lib/python
 # Copyright 2020 Huawei Technologies Co., Ltd
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -167,6 +168,9 @@ class LeNet5(nn.Cell):
         x = self.relu(x)
         x = self.fc3(x)
         return x
+
+    def __str__(self):
+        return "LeNet5 - looks like only net that works in CPU mode ;-) [2020/07/01]"
 
 
 def train_net(args, model, epoch_size, mnist_path, repeat_size, ckpoint_cb):

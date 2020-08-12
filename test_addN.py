@@ -1,3 +1,5 @@
+#!/usr/lib/python
+
 import numpy as np
 import mindspore.context as context
 import mindspore.nn as nn
@@ -17,6 +19,11 @@ class NewAddN(nn.Cell):
 
     def construct(self, *x):
         return self.addN(x)
+
+
+    def __str__(self):
+        return "Class to test mindspore.ops.operations.AddN() in CPU mode"
+
 
 x = Tensor(np.array([1,3,3,4]).astype(np.float32))
 y = Tensor(np.array([1,3,3,4]).astype(np.float32))

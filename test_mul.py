@@ -1,3 +1,5 @@
+#!/usr/lib/python
+
 import numpy as np
 import mindspore.context as context
 import mindspore.nn as nn
@@ -13,6 +15,9 @@ class Mul(nn.Cell):
 
     def construct(self, x, y):
         return self.mul(x, y)
+
+    def __str__(self):
+        return "Class to test mindspore.ops.operations.Mul() in CPU mode"
 
 x = Tensor(np.array([1.0, 2.0, 3.0]).astype(np.float32))
 y = Tensor(np.array([4.0, 5.0, 6.0]).astype(np.float32))

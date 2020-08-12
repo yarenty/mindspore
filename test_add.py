@@ -1,3 +1,5 @@
+#!/usr/lib/python
+
 import numpy as np
 import mindspore.context as context
 import mindspore.nn as nn
