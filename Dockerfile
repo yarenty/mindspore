@@ -18,7 +18,7 @@ RUN apt -y install python3.7 curl python3-distutils \
   && python3.7 get-pip.py
 
 # getting current version of mindspore
-RUN pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/0.5.0-beta/MindSpore/cpu/ubuntu_x86/mindspore-0.5.0-cp37-cp37m-linux_x86_64.whl
+RUN pip3 install https://ms-release.obs.cn-north-4.myhuaweicloud.com/0.6.0-beta/MindSpore/cpu/ubuntu_x86/mindspore-0.6.0-cp37-cp37m-linux_x86_64.whl
 # local tests
 COPY test_mul.py /opt
 COPY lenet.py /opt
