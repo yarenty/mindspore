@@ -1,0 +1,22 @@
+mlspec_schema_version:
+  meta: 1.0.0
+
+mlspec_schema_type: 
+  meta: md_platform_container
+
+schema_version:
+  # User previded: Identifies version of md_input to use
+  type: semver
+  required: True
+
+schema_type:
+  # User previded: Identifies that this is a md_input
+  type: string
+  required: True
+
+runtime:
+  type: string
+
+image:
+  type: string
+  required: True
