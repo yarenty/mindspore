@@ -69,6 +69,13 @@ docker push <your docker name>/mindspore:latest
 
 # Changelog
 
+
+
+
+## 0.8.0 
+* looking into ml perf project - trying to test / research on it
+* moving to ubuntu 20
+
 ## 0.7.0 
 * updated to latest version
 
