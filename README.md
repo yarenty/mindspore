@@ -70,7 +70,9 @@ docker push <your docker name>/mindspore:latest
 # Changelog
 
 
-
+## 1.0.0
+* upgraded to latest version
+* MD - downgrade to bionic and change to 0.1.0
 
 ## 0.8.0 
 * looking into ml perf project - trying to test / research on it
