@@ -12,7 +12,7 @@ from minddocker import minddocker_check
 
 
 DOCKER_TEMPLATE = """
-FROM ubuntu:20.04
+FROM ubuntu:bionic
 
 RUN apt update
 RUN apt-get -y install python3
