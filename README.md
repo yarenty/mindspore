@@ -69,6 +69,9 @@ docker push <your docker name>/mindspore:latest
 
 # Changelog
 
+## 0.7.0 
+* updated to latest version
+
 ## 0.6.0
 * shebang to python test 
 
